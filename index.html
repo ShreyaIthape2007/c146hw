@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<hmtl>
+
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"> </script>
+    </head>
+
+    <body>
+
+        <a-scene>
+
+            <!--Camera-->
+            <a-entity position="0 0 1">
+                <a-camera></a-camera>
+            </a-entity>
+
+            <a-plane position="0 -1 -5" rotation="-90 0 0" width="8" height="4" color="black"></a-plane>
+            
+
+            <!--feet-->
+            <a-sphere position="-1 -1 -5" color="red" radius="0.2"></a-sphere>
+
+            <a-sphere position="0.5 -1 -5" color="red" radius="0.2"></a-sphere>
+
+            <!--legs-->
+
+            <a-cylinder position="-1 -1 -5" color="orange" radius="0.1" height="1.2"></a-cylinder>
+
+            <a-cylinder position="0.5 -1 -5" color="orange" radius="0.1" height="1.2"></a-cylinder>
+
+            <!--main body-->
+
+            <a-box position="-0.2 0.6 -5" color="yellow" scale="2 2 2"></a-box>
+
+            <!--neck-->
+
+            <a-cylinder position="-0.2 1 -5" color="darkorange" radius="0.1" height="3"></a-cylinder>
+            
+
+            <!--head-->
+            <a-box position="-0.2 2.7 -5" color="yellow" scale="1.5 1.5 1.5"></a-box>
+
+            <a-cylinder position="1.2 0.7 -5" color="darkorange" radius="0.1" height="1.5" rotation="0 0 30"></a-cylinder>
+
+            
+            <!--arms-->
+
+            <a-cylinder position="-1.7 0.7 -5" color="darkorange" radius="0.1" height="1.5" rotation="0 0 330"></a-cylinder>
+
+            <!--eyes-->
+
+            <a-sphere position="-0.5 2.7 -4.3" color="red" radius="0.15"></a-sphere>
+
+            <a-sphere position="0.1 2.7 -4.3" color="red" radius="0.15"></a-sphere>
+
+             <!--pupils-->
+
+             <a-sphere position="-0.5 2.6 -4" color="white" radius="0.05"  >
+
+                <a-animation attribute="position" dur="3000" from="-0.55 2.65 -4.15" to="-0.39 2.65 -4.15" repeat="indefinite" dir="alternate">
+
+                </a-animation>
+             </a-sphere>
+
+             <a-sphere position="0.1 2.6 -4" color="white" radius="0.05" >
+                <a-animation attribute="position" dur="3000" from="0.02 2.65 -4.15" to="0.18 2.65 -4.15" repeat="indefinite" dir="alternate">
+             </a-sphere>
+
+
+             <!--mouth-->
+
+            <a-sphere position="-0.3 2.4 -4.3" color="blue" radius="0.15">
+
+                <a-animation attribute="position" dur="2000" from="-0.3 2.4 -4.3" to="-0.15 2.4 -4.3" repeat="indefinite" dir="alternate"></a-animation>
+
+
+            </a-sphere>
+
+
+
+            
+
+            
+
+            
+
+
+
+
+        </a-scene>
+
+
+    </body>
+
+</hmtl>>
